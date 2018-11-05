@@ -20,13 +20,13 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArraySet;
 
-/**
+/** web socket
  * Created by z1761 on 2018/11/2.
  */
 @ServerEndpoint(value="/websocket/{username}")
 @Component
 public class WebSocket {
-    private static  int onlineCount = 0;
+    private static  int onlineCount = 0; //做统计使用
     private static  Map<String,WebSocket> socket = new ConcurrentHashMap<>();
     //private static CopyOnWriteArraySet<WebSocket> socket = new CopyOnWriteArraySet<>();
     private Session session;
@@ -37,8 +37,8 @@ public class WebSocket {
     public void onOpen(@PathParam("username")String username, Session session){
         this.username = username;
         this.session = session;
-        count++;
-        socket.put(count+"",this);
+       /* count++;
+        socket.put(count+"",this);*/
         addOnlineCount();
         System.out.println("已连接");
         System.out.println("有新连接加入！当前在线人数为" + getOnlineCount());
