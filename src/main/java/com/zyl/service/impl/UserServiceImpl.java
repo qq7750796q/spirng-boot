@@ -40,4 +40,17 @@ public class UserServiceImpl implements UserService {
         return result;
     }
 
+    @Override
+    public UserDomain findByUserID(String name) {
+
+        return userDao.findUserById(name);
+    }
+
+    @Override
+    public UserDomain findByUserObject(UserDomain userDomain) {
+        UserDomain code= userDao.findByUserObject(userDomain);
+
+        return code;
+    }
+
 }

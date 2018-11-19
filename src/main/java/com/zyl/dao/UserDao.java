@@ -1,6 +1,7 @@
 package com.zyl.dao;
 
 import com.zyl.model.UserDomain;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -13,4 +14,10 @@ public interface UserDao {
 
 
     List<UserDomain> selectUsers();
+
+
+    UserDomain findUserById(@Param("id") String name);
+
+
+    UserDomain findByUserObject(UserDomain userDomain);
 }

@@ -5,7 +5,9 @@ import com.zyl.design.domain.Taxi;
 import com.zyl.design.enums.TravelScopeEnum;
 import com.zyl.design.service.AbroadTimeService;
 import com.zyl.design.service.TaxiPriceService;
+import com.zyl.model.UserDomain;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -14,18 +16,40 @@ import org.springframework.web.servlet.ModelAndView;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 
 /**
  * Created by z1761 on 2018/10/12.
  */
 @Controller
 public class AbroadTimeController {
+/*
+    public void i(int a){
+
+    }
+    public int i (int a) {
+
+        return 0;
+    }*/
+
+    @Autowired
+    private ApplicationContext applicationContext;
+
     @Autowired
     private AbroadTimeService abroadTimeService;
     @Autowired
     private TaxiPriceService taxiPriceService;
 
     public static void main(String[] args) {
+        System.out.println();
+        Integer a = 130;
+        Integer b = 130;
+        HashMap<String,Object> map = new HashMap<>();
+        map.put("","");
+        String str = "啊啊";
+        System.out.println(str=="啊啊");
+
+      //  System.out.println(a.equals(b));
         /*AbroadTimeController abroadTimeController = new AbroadTimeController();
         BigDecimal bigDecimal = abroadTimeController.abroadPrice();
         System.out.println("价格是"+bigDecimal);*/
@@ -62,7 +86,7 @@ public class AbroadTimeController {
 
     @RequestMapping("/admin/test.htm")
     @ResponseBody
-    public BigDecimal abroadPrice(){
+    public BigDecimal abroadPrice(UserDomain user){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         long l = System.currentTimeMillis();
         Date date = new Date(l);

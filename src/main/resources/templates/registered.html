@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<title>盒老师</title>
+	<meta name="keywords" content="盒老师">
+	<meta name="content" content="盒老师">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link type="text/css" rel="stylesheet" href="../css/login.css">
+    <script type="text/javascript" src="../js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../js/FormSerialize.js"></script>
+</head>
+<script  type="text/javascript">
+
+
+</script>
+<script type="text/javascript" th:inline="javascript">
+    /*<![CDATA[*/
+    var path=window.location.host;
+    /*]]>*/
+</script>
+<body class="login_bj" >
+
+<div class="zhuce_body">
+	<div class="logo"><a href="#"><img src="../images/logo.png" width="114" height="54" border="0"></a></div>
+    <div class="zhuce_kong">
+    	<div class="zc">
+        	<div class="bj_bai">
+            <h3>欢迎注册</h3>
+       	  	  <form action="" method="get" id="registered">
+                <input name="userName" id="userName" type="text" class="kuang_txt username" placeholder="用户名称">
+                <input name="phone" id="phone" type="text" class="kuang_txt phone" placeholder="手机号">
+                <input name="email" type="text" class="kuang_txt email" placeholder="邮箱">
+                <input name="password" type="text" class="kuang_txt possword" placeholder="密码">
+                <input name="" type="text" class="kuang_txt yanzm" placeholder="验证码">
+                <div>
+                	<div class="hui_kuang"><img src="../images/zc_22.jpg" width="92" height="31"></div>
+                	<div class="shuaxin"><a href="#"><img src="../images/zc_25.jpg" width="13" height="14"></a></div>
+                </div>
+                <div>
+               		<input name="" type="checkbox" value=""><span>已阅读并同意<a href="#" target="_blank"><span class="lan">《XXXXX使用协议》</span></a></span>
+                </div>
+                <input name="注册" type="button" class="btn_zhuce registered" value="注册">
+                
+                </form>
+            </div>
+        	<div class="bj_right">
+            	<p>使用以下账号直接登录</p>
+                <a href="#" class="zhuce_qq">QQ注册</a>
+                <a href="#" class="zhuce_wb">微博注册</a>
+                <a href="#" class="zhuce_wx">微信注册</a>
+                <p>已有账号？<a href="login.htm">立即登录</a></p>
+            
+            </div>
+        </div>
+        <P>Diyhe.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎您定制盒子模型</P>
+    </div>
+
+</div>
+  <!--
+<div style="text-align:center;">
+<p>来源:<a href="http://down.admin5.com/" target="_blank">A5源码</a></p>
+</div>-->
+
+</body>
+<script>
+
+    $("#phone").blur(function () {
+        console.log($("#phone").val());
+    })
+
+ /*  $("#phone").on("blur",function () {
+       console.log($("#phone").val());
+   })*/
+    
+</script>
+<script type="text/javascript" src="../script/registered.js"></script>
+</html>

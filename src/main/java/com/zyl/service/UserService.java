@@ -10,4 +10,10 @@ public interface UserService {
     int addUser(UserDomain user);
 
     PageInfo<UserDomain> findAllUser(int pageNum, int pageSize);
+
+
+    UserDomain findByUserID(String name);
+
+
+    UserDomain findByUserObject(UserDomain userDomain);
 }

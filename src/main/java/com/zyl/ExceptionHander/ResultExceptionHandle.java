@@ -1,7 +1,7 @@
 package com.zyl.ExceptionHander;
 
 import com.zyl.common.customException;
-import com.zyl.common.customResult;
+import com.zyl.common.CustomResult;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -17,12 +17,12 @@ public class ResultExceptionHandle {
 
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
-    public customResult handleException(HttpServletRequest request, Exception e) {
+    public CustomResult handleException(HttpServletRequest request, Exception e) {
         if (e instanceof customException) {
             customException personException = (customException) e;
-            return new customResult(personException.getCode(), personException.getMsg());
+            return new CustomResult(personException.getCode(), personException.getMsg());
         }
-        return new customResult(-1, "未知错误");
+        return new CustomResult(-1, "未知错误");
     }
 
 }
