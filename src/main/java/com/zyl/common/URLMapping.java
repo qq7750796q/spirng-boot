@@ -24,4 +24,8 @@ public class URLMapping {
      * 登陆
      */
     public static final String DEMO_LOGIN_ENTER = "/login/enter.htm";
+    /**
+     * 退出
+     */
+    public static final String DEMO_LOGIN_LOGOUT = "/login/logout.htm";
 }

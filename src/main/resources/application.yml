@@ -1,5 +1,7 @@
 server:
   port: 8180
+  servlet:
+    context-path: /
 
 #配置控制台打印sql
 logging:

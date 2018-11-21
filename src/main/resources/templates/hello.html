@@ -10,7 +10,7 @@ Welcome<br/><input id="text" type="text"/>
 <hr/>
 <button onclick="closeWebSocket()">关闭WebSocket连接</button>
 <hr/>
-<input name ="" id="user1" value="猪">
+<input name ="" id="user1" value="">
 <div id="message"></div>
 
 </body>
@@ -18,7 +18,7 @@ Welcome<br/><input id="text" type="text"/>
     var websocket = null;
     //判断当前浏览器是否支持WebSocket
     if ('WebSocket' in window) {
-        websocket = new WebSocket("ws://localhost:8080/websocket/"+"猪");
+        websocket = new WebSocket("ws://localhost:8180/websocket/"+"猪");
     }
     else {
         alert('当前浏览器 Not support websocket')
@@ -63,7 +63,7 @@ Welcome<br/><input id="text" type="text"/>
     function send() {
         //var message =
         var  shuzu ={};
-        shuzu.TO = "2";
+        shuzu.TO = document.getElementById('user1').value;
         shuzu.message = document.getElementById('text').value;
 
         websocket.send(JSON.stringify(shuzu));

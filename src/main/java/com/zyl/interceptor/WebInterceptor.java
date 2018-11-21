@@ -11,6 +11,8 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.util.Enumeration;
 
 /**
  * Created by z1761 on 2018/10/26.
@@ -27,11 +29,19 @@ public class WebInterceptor implements HandlerInterceptor {
                 Cookie cookie = cookies[i];
                 if ("userCookie".equals(cookie.getName())){
                     String name = cookie.getValue(); //暂定当作userId
-                    UserDomain user = userService.findByUserID(name);
-                    return true;
+                    HttpSession session = request.getSession();
+                    UserDomain attribute = (UserDomain)session.getAttribute("_user");
+                    //HttpSession session1 = session.getSessionContext().getSession(name);
+                    if (null != attribute) {
+                        return true;
+                    }
+                   // UserDomain user = userService.findByUserID(name);
+                    response.sendRedirect(request.getContextPath()+"/login/login.htm");
+                    return false;
                 }
             }
         }
+        response.sendRedirect(request.getContextPath()+"/login/login.htm");
         System.out.println("登录接口在这");
         return false;
     }
