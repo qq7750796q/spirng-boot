@@ -16,9 +16,9 @@ Welcome<br/><input id="text" type="text"/>
 </body>
 <script type="text/javascript">
     var websocket = null;
-    //判断当前浏览器是否支持WebSocket
+    //判断当前浏览器是否支持WebSockethttp://springboot.zyl.com:8180
     if ('WebSocket' in window) {
-        websocket = new WebSocket("ws://localhost:8180/websocket/"+"猪");
+        websocket = new WebSocket("ws://springboot.zyl.com:8180/websocket/"+"猪");
     }
     else {
         alert('当前浏览器 Not support websocket')

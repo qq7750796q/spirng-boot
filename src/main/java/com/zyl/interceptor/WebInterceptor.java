@@ -31,10 +31,16 @@ public class WebInterceptor implements HandlerInterceptor {
                     String name = cookie.getValue(); //暂定当作userId
                     HttpSession session = request.getSession();
                     UserDomain attribute = (UserDomain)session.getAttribute("_user");
-                    //HttpSession session1 = session.getSessionContext().getSession(name);
-                    if (null != attribute) {
-                        return true;
+                    //获取session id 和cookie 的存放的id 进行对比
+
+                    if (null !=session && session.getId().equals(name)) {
+                        //判断当前用户信息
+                        if (null != attribute) {
+                            return true;
+                        }
                     }
+                    //HttpSession session1 = session.getSessionContext().getSession(name);
+
                    // UserDomain user = userService.findByUserID(name);
                     response.sendRedirect(request.getContextPath()+"/login/login.htm");
                     return false;
