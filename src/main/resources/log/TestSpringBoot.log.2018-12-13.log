@@ -130,3 +130,862 @@ Caused by: java.lang.IllegalStateException: javax.websocket.server.ServerContain
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
 	... 42 common frames omitted
+2018-12-13 10:30:49.125 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 11192 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 10:30:49.129 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 10:30:49.222 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@bf688e: startup date [Thu Dec 13 10:30:49 CST 2018]; root of context hierarchy
+2018-12-13 10:30:51.552 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5da2f277] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 10:30:52.412 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-12-13 10:30:52.446 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-12-13 10:30:52.480 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-13 10:30:52.481 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-13 10:30:52.503 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\zookeeper-3.4.11\bin;D:\apache-maven-3.0.4\bin;D:\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\OpenVPN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\z1761\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\z1761\AppData\Local\Programs\Python\Python37\;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\z1761\Desktop\新建文件夹 (2)\Fiddler;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;.]
+2018-12-13 10:30:53.060 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-13 10:30:53.061 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3839 ms
+2018-12-13 10:30:53.230 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-13 10:30:53.232 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2018-12-13 10:30:53.235 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-13 10:30:53.237 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-13 10:30:53.237 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-13 10:30:53.237 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-13 10:30:53.237 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-13 10:30:53.298 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2018-12-13 10:30:54.227 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-13 10:30:54.433 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-13 10:30:54.449 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-13 10:30:54.553 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-13 10:30:54.555 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-13 10:30:54.621 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-13 10:30:54.928 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-13 10:30:55.761 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 10:30:56.809 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 10:30:57.781 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@bf688e: startup date [Thu Dec 13 10:30:49 CST 2018]; root of context hierarchy
+2018-12-13 10:30:57.845 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-13 10:30:57.895 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tologin/test.htm]}" onto public java.lang.String com.zyl.controller.AbroadTimeController.abroadPriceaa()
+2018-12-13 10:30:57.899 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/test.htm]}" onto public java.math.BigDecimal com.zyl.controller.AbroadTimeController.abroadPrice(com.zyl.model.UserDomain)
+2018-12-13 10:30:57.900 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/enter.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.zyl.vo.Res.UserVo)
+2018-12-13 10:30:57.901 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toLogin()
+2018-12-13 10:30:57.901 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/saveRegistered.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.saveUser(com.zyl.vo.Res.UserVo)
+2018-12-13 10:30:57.901 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/logout.htm]}" onto public void com.zyl.controller.login.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 10:30:57.901 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/Registered.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toRegistered()
+2018-12-13 10:30:57.901 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tst]}" onto public java.lang.String com.zyl.controller.SampleController.test()
+2018-12-13 10:30:57.905 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.zyl.controller.UserController.addUser(com.zyl.model.UserDomain)
+2018-12-13 10:30:57.906 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/all],methods=[GET]}" onto public java.lang.Object com.zyl.controller.UserController.findAllUser(int,int) throws java.lang.Exception
+2018-12-13 10:30:57.906 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/checkObject],methods=[GET]}" onto public void com.zyl.controller.UserController.testchecked(com.zyl.model.UserDomain,org.springframework.validation.BindingResult) throws java.lang.Exception
+2018-12-13 10:30:57.907 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/louguser.htm]}" onto public java.lang.Object com.zyl.wxController.AppletUserinfoController.saveAppUserInfo(javax.servlet.http.HttpServletRequest)
+2018-12-13 10:30:58.014 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notifi]}" onto public void com.zyl.wxController.WXPayController.notifi(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 10:30:58.014 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay],produces=[text/json;charset=UTF-8]}" onto public java.lang.String com.zyl.wxController.WXPayController.pay(javax.servlet.http.HttpServletRequest,java.lang.String)
+2018-12-13 10:30:58.020 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-13 10:30:58.020 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 10:30:58.205 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 10:30:58.206 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 10:30:58.279 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in resultExceptionHandle
+2018-12-13 10:30:58.629 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-12-13 10:30:59.292 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.zyl.webSocket.WebSocket
+2018-12-13 10:30:59.313 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-13 10:30:59.316 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-12-13 10:30:59.317 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-13 10:30:59.331 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-12-13 10:30:59.332 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-12-13 10:30:59.353 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-12-13 10:30:59.367 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-13 10:30:59.384 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-12-13 10:30:59.389 [main] INFO  com.zyl.StringbootApplication - Started StringbootApplication in 10.884 seconds (JVM running for 14.782)
+2018-12-13 10:31:02.595 [Thread-25] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@bf688e: startup date [Thu Dec 13 10:30:49 CST 2018]; root of context hierarchy
+2018-12-13 10:31:02.609 [Thread-25] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-12-13 10:31:02.615 [Thread-25] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-12-13 10:31:02.621 [Thread-25] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 10:31:02.629 [Thread-25] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-12-13 10:31:54.353 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 12188 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 10:31:54.365 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 10:31:54.497 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a8a64e: startup date [Thu Dec 13 10:31:54 CST 2018]; root of context hierarchy
+2018-12-13 10:31:56.170 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f80bdf56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 10:31:56.739 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-12-13 10:31:56.756 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-12-13 10:31:56.775 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-13 10:31:56.776 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-13 10:31:56.782 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\zookeeper-3.4.11\bin;D:\apache-maven-3.0.4\bin;D:\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\OpenVPN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\z1761\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\z1761\AppData\Local\Programs\Python\Python37\;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\z1761\Desktop\新建文件夹 (2)\Fiddler;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;.]
+2018-12-13 10:31:57.066 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-13 10:31:57.067 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2569 ms
+2018-12-13 10:31:57.310 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-13 10:31:57.318 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2018-12-13 10:31:57.330 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-13 10:31:57.331 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-13 10:31:57.332 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-13 10:31:57.332 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-13 10:31:57.332 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-13 10:31:57.431 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2018-12-13 10:31:58.293 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-13 10:31:58.471 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-13 10:31:58.486 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-13 10:31:58.624 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-13 10:31:58.626 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-13 10:31:58.713 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-13 10:31:58.919 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-13 10:31:59.554 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 10:32:00.142 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 10:32:00.571 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a8a64e: startup date [Thu Dec 13 10:31:54 CST 2018]; root of context hierarchy
+2018-12-13 10:32:00.646 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-13 10:32:00.690 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tologin/test.htm]}" onto public java.lang.String com.zyl.controller.AbroadTimeController.abroadPriceaa()
+2018-12-13 10:32:00.692 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/test.htm]}" onto public java.math.BigDecimal com.zyl.controller.AbroadTimeController.abroadPrice(com.zyl.model.UserDomain)
+2018-12-13 10:32:00.693 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toLogin()
+2018-12-13 10:32:00.694 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/enter.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.zyl.vo.Res.UserVo)
+2018-12-13 10:32:00.694 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/saveRegistered.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.saveUser(com.zyl.vo.Res.UserVo)
+2018-12-13 10:32:00.694 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/logout.htm]}" onto public void com.zyl.controller.login.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 10:32:00.694 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/Registered.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toRegistered()
+2018-12-13 10:32:00.695 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tst]}" onto public java.lang.String com.zyl.controller.SampleController.test()
+2018-12-13 10:32:00.700 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.zyl.controller.UserController.addUser(com.zyl.model.UserDomain)
+2018-12-13 10:32:00.700 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/all],methods=[GET]}" onto public java.lang.Object com.zyl.controller.UserController.findAllUser(int,int) throws java.lang.Exception
+2018-12-13 10:32:00.700 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/checkObject],methods=[GET]}" onto public void com.zyl.controller.UserController.testchecked(com.zyl.model.UserDomain,org.springframework.validation.BindingResult) throws java.lang.Exception
+2018-12-13 10:32:00.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/louguser.htm]}" onto public java.lang.Object com.zyl.wxController.AppletUserinfoController.saveAppUserInfo(javax.servlet.http.HttpServletRequest)
+2018-12-13 10:32:00.703 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notifi]}" onto public void com.zyl.wxController.WXPayController.notifi(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 10:32:00.703 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay],produces=[text/json;charset=UTF-8]}" onto public java.lang.String com.zyl.wxController.WXPayController.pay(javax.servlet.http.HttpServletRequest,java.lang.String)
+2018-12-13 10:32:00.706 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-13 10:32:00.706 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 10:32:00.761 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 10:32:00.761 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 10:32:00.794 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in resultExceptionHandle
+2018-12-13 10:32:00.898 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-12-13 10:32:01.453 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.zyl.webSocket.WebSocket
+2018-12-13 10:32:01.465 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-13 10:32:01.467 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-12-13 10:32:01.467 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-13 10:32:01.473 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-12-13 10:32:01.474 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-12-13 10:32:01.484 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-12-13 10:32:01.496 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-13 10:32:01.577 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-12-13 10:32:01.588 [main] INFO  com.zyl.StringbootApplication - Started StringbootApplication in 8.126 seconds (JVM running for 10.088)
+2018-12-13 10:32:44.817 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-13 10:32:44.817 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-13 10:32:44.856 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2018-12-13 10:32:53.916 [http-nio-80-exec-4] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 10:32:53.946 [http-nio-80-exec-4] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 10:32:53.998 [http-nio-80-exec-4] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 1
+2018-12-13 10:34:07.038 [Thread-18] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@a8a64e: startup date [Thu Dec 13 10:31:54 CST 2018]; root of context hierarchy
+2018-12-13 10:34:07.054 [Thread-18] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-12-13 10:34:07.054 [Thread-18] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-12-13 10:34:07.054 [Thread-18] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 10:34:07.054 [Thread-18] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-12-13 10:34:11.319 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 17420 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 10:34:11.319 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 10:34:11.382 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12ffcb7: startup date [Thu Dec 13 10:34:11 CST 2018]; root of context hierarchy
+2018-12-13 10:34:12.753 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58582178] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 10:34:13.145 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-12-13 10:34:13.161 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-12-13 10:34:13.161 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-13 10:34:13.161 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-13 10:34:13.176 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\zookeeper-3.4.11\bin;D:\apache-maven-3.0.4\bin;D:\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\OpenVPN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\z1761\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\z1761\AppData\Local\Programs\Python\Python37\;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\z1761\Desktop\新建文件夹 (2)\Fiddler;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;.]
+2018-12-13 10:34:13.293 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-13 10:34:13.293 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1911 ms
+2018-12-13 10:34:13.418 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-13 10:34:13.418 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2018-12-13 10:34:13.418 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-13 10:34:13.418 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-13 10:34:13.418 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-13 10:34:13.418 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-13 10:34:13.418 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-13 10:34:13.465 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2018-12-13 10:34:14.208 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-13 10:34:14.361 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-13 10:34:14.377 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-13 10:34:14.455 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-13 10:34:14.455 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-13 10:34:14.486 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-13 10:34:14.626 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-13 10:34:15.033 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 10:34:15.324 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 10:34:15.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12ffcb7: startup date [Thu Dec 13 10:34:11 CST 2018]; root of context hierarchy
+2018-12-13 10:34:15.628 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/test.htm]}" onto public java.math.BigDecimal com.zyl.controller.AbroadTimeController.abroadPrice(com.zyl.model.UserDomain)
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tologin/test.htm]}" onto public java.lang.String com.zyl.controller.AbroadTimeController.abroadPriceaa()
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toLogin()
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/enter.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.zyl.vo.Res.UserVo)
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/saveRegistered.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.saveUser(com.zyl.vo.Res.UserVo)
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/logout.htm]}" onto public void com.zyl.controller.login.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/Registered.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toRegistered()
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tst]}" onto public java.lang.String com.zyl.controller.SampleController.test()
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.zyl.controller.UserController.addUser(com.zyl.model.UserDomain)
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/checkObject],methods=[GET]}" onto public void com.zyl.controller.UserController.testchecked(com.zyl.model.UserDomain,org.springframework.validation.BindingResult) throws java.lang.Exception
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/all],methods=[GET]}" onto public java.lang.Object com.zyl.controller.UserController.findAllUser(int,int) throws java.lang.Exception
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/louguser.htm]}" onto public java.lang.Object com.zyl.wxController.AppletUserinfoController.saveAppUserInfo(javax.servlet.http.HttpServletRequest)
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notifi]}" onto public void com.zyl.wxController.WXPayController.notifi(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay],produces=[text/json;charset=UTF-8]}" onto public java.lang.String com.zyl.wxController.WXPayController.pay(javax.servlet.http.HttpServletRequest,java.lang.String)
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-13 10:34:15.659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 10:34:15.690 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 10:34:15.690 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 10:34:15.706 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in resultExceptionHandle
+2018-12-13 10:34:15.737 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-12-13 10:34:16.083 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.zyl.webSocket.WebSocket
+2018-12-13 10:34:16.099 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-13 10:34:16.099 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-12-13 10:34:16.099 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-13 10:34:16.099 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-12-13 10:34:16.099 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-12-13 10:34:16.114 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-12-13 10:34:16.130 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-13 10:34:16.130 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-12-13 10:34:16.146 [main] INFO  com.zyl.StringbootApplication - Started StringbootApplication in 5.314 seconds (JVM running for 6.558)
+2018-12-13 10:35:26.135 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-13 10:35:26.135 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-13 10:35:26.155 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-12-13 10:35:28.791 [http-nio-80-exec-4] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 10:35:28.821 [http-nio-80-exec-4] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 10:35:28.878 [http-nio-80-exec-4] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 1
+2018-12-13 11:04:27.929 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 17580 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 11:04:27.929 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 11:04:28.014 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1af146: startup date [Thu Dec 13 11:04:28 CST 2018]; root of context hierarchy
+2018-12-13 11:04:29.380 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3a7ccab8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 11:04:30.124 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-12-13 11:04:30.166 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-12-13 11:04:30.197 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-13 11:04:30.197 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-13 11:04:30.197 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\zookeeper-3.4.11\bin;D:\apache-maven-3.0.4\bin;D:\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\OpenVPN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\z1761\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\z1761\AppData\Local\Programs\Python\Python37\;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\z1761\Desktop\新建文件夹 (2)\Fiddler;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;.]
+2018-12-13 11:04:30.353 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-13 11:04:30.353 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2339 ms
+2018-12-13 11:04:30.478 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-13 11:04:30.478 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2018-12-13 11:04:30.478 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-13 11:04:30.478 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-13 11:04:30.478 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-13 11:04:30.478 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-13 11:04:30.478 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-13 11:04:30.525 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2018-12-13 11:04:31.842 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-13 11:04:31.992 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:04:32.008 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-13 11:04:32.102 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-13 11:04:32.102 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-13 11:04:32.164 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-13 11:04:32.349 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-13 11:04:32.931 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:04:33.333 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:04:33.641 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1af146: startup date [Thu Dec 13 11:04:28 CST 2018]; root of context hierarchy
+2018-12-13 11:04:33.672 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-13 11:04:33.735 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/test.htm]}" onto public java.math.BigDecimal com.zyl.controller.AbroadTimeController.abroadPrice(com.zyl.model.UserDomain)
+2018-12-13 11:04:33.735 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tologin/test.htm]}" onto public java.lang.String com.zyl.controller.AbroadTimeController.abroadPriceaa()
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/Registered.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toRegistered()
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toLogin()
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/logout.htm]}" onto public void com.zyl.controller.login.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/enter.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.zyl.vo.Res.UserVo)
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/saveRegistered.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.saveUser(com.zyl.vo.Res.UserVo)
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tst]}" onto public java.lang.String com.zyl.controller.SampleController.test()
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.zyl.controller.UserController.addUser(com.zyl.model.UserDomain)
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/all],methods=[GET]}" onto public java.lang.Object com.zyl.controller.UserController.findAllUser(int,int) throws java.lang.Exception
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/checkObject],methods=[GET]}" onto public void com.zyl.controller.UserController.testchecked(com.zyl.model.UserDomain,org.springframework.validation.BindingResult) throws java.lang.Exception
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/louguser.htm]}" onto public java.lang.Object com.zyl.wxController.AppletUserinfoController.saveAppUserInfo(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notifi]}" onto public void com.zyl.wxController.WXPayController.notifi(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay],produces=[text/json;charset=UTF-8]}" onto public java.lang.String com.zyl.wxController.WXPayController.pay(javax.servlet.http.HttpServletRequest,java.lang.String)
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:04:33.751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:04:33.797 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:04:33.797 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:04:33.836 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in resultExceptionHandle
+2018-12-13 11:04:33.888 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-12-13 11:04:34.382 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.zyl.webSocket.WebSocket
+2018-12-13 11:04:34.398 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-13 11:04:34.398 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-12-13 11:04:34.398 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-13 11:04:34.414 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-12-13 11:04:34.414 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-12-13 11:04:34.414 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-12-13 11:04:34.429 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-13 11:04:34.445 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-12-13 11:04:34.461 [main] INFO  com.zyl.StringbootApplication - Started StringbootApplication in 7.125 seconds (JVM running for 8.738)
+2018-12-13 11:04:44.203 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-13 11:04:44.204 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-13 11:04:44.227 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-12-13 11:04:47.152 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 11:04:47.177 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 11:04:47.237 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 1
+2018-12-13 11:07:54.040 [Thread-18] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1af146: startup date [Thu Dec 13 11:04:28 CST 2018]; root of context hierarchy
+2018-12-13 11:07:54.055 [Thread-18] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-12-13 11:07:54.055 [Thread-18] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-12-13 11:07:54.055 [Thread-18] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:07:54.055 [Thread-18] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-12-13 11:08:00.097 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 8344 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 11:08:00.097 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 11:08:00.191 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e6b5c8: startup date [Thu Dec 13 11:08:00 CST 2018]; root of context hierarchy
+2018-12-13 11:08:01.556 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8fea674a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 11:08:02.038 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-12-13 11:08:02.100 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-12-13 11:08:02.120 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-13 11:08:02.121 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-13 11:08:02.128 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\zookeeper-3.4.11\bin;D:\apache-maven-3.0.4\bin;D:\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\OpenVPN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\z1761\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\z1761\AppData\Local\Programs\Python\Python37\;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\z1761\Desktop\新建文件夹 (2)\Fiddler;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;.]
+2018-12-13 11:08:02.283 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-13 11:08:02.283 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2092 ms
+2018-12-13 11:08:02.416 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-13 11:08:02.416 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2018-12-13 11:08:02.416 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-13 11:08:02.416 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-13 11:08:02.416 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-13 11:08:02.416 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-13 11:08:02.416 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-13 11:08:02.463 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2018-12-13 11:08:03.287 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-13 11:08:03.474 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:08:03.490 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-13 11:08:03.599 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-13 11:08:03.599 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-13 11:08:03.662 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-13 11:08:03.850 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-13 11:08:04.383 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:08:04.791 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:08:05.105 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e6b5c8: startup date [Thu Dec 13 11:08:00 CST 2018]; root of context hierarchy
+2018-12-13 11:08:05.136 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-13 11:08:05.183 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/test.htm]}" onto public java.math.BigDecimal com.zyl.controller.AbroadTimeController.abroadPrice(com.zyl.model.UserDomain)
+2018-12-13 11:08:05.183 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tologin/test.htm]}" onto public org.springframework.web.servlet.ModelAndView com.zyl.controller.AbroadTimeController.abroadPriceaa()
+2018-12-13 11:08:05.183 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/logout.htm]}" onto public void com.zyl.controller.login.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:08:05.183 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/enter.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.zyl.vo.Res.UserVo)
+2018-12-13 11:08:05.183 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/saveRegistered.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.saveUser(com.zyl.vo.Res.UserVo)
+2018-12-13 11:08:05.183 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toLogin()
+2018-12-13 11:08:05.183 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/Registered.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toRegistered()
+2018-12-13 11:08:05.183 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tst]}" onto public java.lang.String com.zyl.controller.SampleController.test()
+2018-12-13 11:08:05.203 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.zyl.controller.UserController.addUser(com.zyl.model.UserDomain)
+2018-12-13 11:08:05.204 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/checkObject],methods=[GET]}" onto public void com.zyl.controller.UserController.testchecked(com.zyl.model.UserDomain,org.springframework.validation.BindingResult) throws java.lang.Exception
+2018-12-13 11:08:05.204 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/all],methods=[GET]}" onto public java.lang.Object com.zyl.controller.UserController.findAllUser(int,int) throws java.lang.Exception
+2018-12-13 11:08:05.205 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/louguser.htm]}" onto public java.lang.Object com.zyl.wxController.AppletUserinfoController.saveAppUserInfo(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:08:05.207 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay],produces=[text/json;charset=UTF-8]}" onto public java.lang.String com.zyl.wxController.WXPayController.pay(javax.servlet.http.HttpServletRequest,java.lang.String)
+2018-12-13 11:08:05.208 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notifi]}" onto public void com.zyl.wxController.WXPayController.notifi(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:08:05.212 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:08:05.212 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:08:05.240 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:08:05.240 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:08:05.291 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in resultExceptionHandle
+2018-12-13 11:08:05.339 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-12-13 11:08:05.857 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.zyl.webSocket.WebSocket
+2018-12-13 11:08:05.886 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-13 11:08:05.888 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-12-13 11:08:05.888 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-13 11:08:05.896 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-12-13 11:08:05.898 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-12-13 11:08:05.912 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-12-13 11:08:05.919 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-13 11:08:05.934 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-12-13 11:08:05.950 [main] INFO  com.zyl.StringbootApplication - Started StringbootApplication in 6.474 seconds (JVM running for 8.002)
+2018-12-13 11:13:35.484 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-13 11:13:35.484 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-13 11:13:35.539 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 55 ms
+2018-12-13 11:13:39.415 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 11:13:39.437 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 11:13:39.551 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 1
+2018-12-13 11:14:59.381 [Thread-16] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e6b5c8: startup date [Thu Dec 13 11:08:00 CST 2018]; root of context hierarchy
+2018-12-13 11:14:59.381 [Thread-16] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-12-13 11:14:59.381 [Thread-16] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-12-13 11:14:59.381 [Thread-16] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:14:59.381 [Thread-16] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-12-13 11:15:28.137 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 9260 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 11:15:28.153 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 11:15:28.231 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@116e4e5: startup date [Thu Dec 13 11:15:28 CST 2018]; root of context hierarchy
+2018-12-13 11:15:29.715 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e0272d1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 11:15:30.267 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-12-13 11:15:30.282 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-12-13 11:15:30.298 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-13 11:15:30.298 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-13 11:15:30.314 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\zookeeper-3.4.11\bin;D:\apache-maven-3.0.4\bin;D:\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\OpenVPN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\z1761\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\z1761\AppData\Local\Programs\Python\Python37\;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\z1761\Desktop\新建文件夹 (2)\Fiddler;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;.]
+2018-12-13 11:15:30.532 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-13 11:15:30.532 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2301 ms
+2018-12-13 11:15:30.673 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-13 11:15:30.673 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2018-12-13 11:15:30.688 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-13 11:15:30.688 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-13 11:15:30.688 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-13 11:15:30.688 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-13 11:15:30.688 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-13 11:15:30.720 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2018-12-13 11:15:31.474 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-13 11:15:31.647 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:15:31.649 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-13 11:15:31.742 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-13 11:15:31.742 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-13 11:15:31.805 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-13 11:15:31.998 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-13 11:15:32.789 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:15:33.180 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:15:33.487 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@116e4e5: startup date [Thu Dec 13 11:15:28 CST 2018]; root of context hierarchy
+2018-12-13 11:15:33.534 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tologin/test.htm]}" onto public org.springframework.web.servlet.ModelAndView com.zyl.controller.AbroadTimeController.abroadPriceaa()
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/test.htm]}" onto public java.math.BigDecimal com.zyl.controller.AbroadTimeController.abroadPrice(com.zyl.model.UserDomain)
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/Registered.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toRegistered()
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/logout.htm]}" onto public void com.zyl.controller.login.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/saveRegistered.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.saveUser(com.zyl.vo.Res.UserVo)
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/enter.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.zyl.vo.Res.UserVo)
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toLogin()
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tst]}" onto public java.lang.String com.zyl.controller.SampleController.test()
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.zyl.controller.UserController.addUser(com.zyl.model.UserDomain)
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/all],methods=[GET]}" onto public java.lang.Object com.zyl.controller.UserController.findAllUser(int,int) throws java.lang.Exception
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/checkObject],methods=[GET]}" onto public void com.zyl.controller.UserController.testchecked(com.zyl.model.UserDomain,org.springframework.validation.BindingResult) throws java.lang.Exception
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/louguser.htm]}" onto public java.lang.Object com.zyl.wxController.AppletUserinfoController.saveAppUserInfo(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay],produces=[text/json;charset=UTF-8]}" onto public java.lang.String com.zyl.wxController.WXPayController.pay(javax.servlet.http.HttpServletRequest,java.lang.String)
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notifi]}" onto public void com.zyl.wxController.WXPayController.notifi(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:15:33.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:15:33.628 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:15:33.628 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:15:33.659 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in resultExceptionHandle
+2018-12-13 11:15:33.713 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-12-13 11:15:34.308 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.zyl.webSocket.WebSocket
+2018-12-13 11:15:34.308 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-13 11:15:34.308 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-12-13 11:15:34.308 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-13 11:15:34.324 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-12-13 11:15:34.324 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-12-13 11:15:34.339 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-12-13 11:15:34.339 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-13 11:15:34.355 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-12-13 11:15:34.371 [main] INFO  com.zyl.StringbootApplication - Started StringbootApplication in 6.83 seconds (JVM running for 8.69)
+2018-12-13 11:16:28.021 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-13 11:16:28.022 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-13 11:16:28.046 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-12-13 11:16:30.705 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 11:16:30.727 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 11:16:30.795 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 1
+2018-12-13 11:19:53.060 [Thread-17] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@116e4e5: startup date [Thu Dec 13 11:15:28 CST 2018]; root of context hierarchy
+2018-12-13 11:19:53.060 [Thread-17] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-12-13 11:19:53.060 [Thread-17] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-12-13 11:19:53.076 [Thread-17] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:19:53.076 [Thread-17] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-12-13 11:19:58.384 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 14804 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 11:19:58.389 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 11:19:58.499 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7aa82b: startup date [Thu Dec 13 11:19:58 CST 2018]; root of context hierarchy
+2018-12-13 11:20:00.280 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a3b17685] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 11:20:00.932 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-12-13 11:20:00.950 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-12-13 11:20:00.966 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-13 11:20:00.966 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-13 11:20:00.966 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\zookeeper-3.4.11\bin;D:\apache-maven-3.0.4\bin;D:\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\OpenVPN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\z1761\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\z1761\AppData\Local\Programs\Python\Python37\;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\z1761\Desktop\新建文件夹 (2)\Fiddler;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;.]
+2018-12-13 11:20:01.122 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-13 11:20:01.122 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2623 ms
+2018-12-13 11:20:01.272 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-13 11:20:01.272 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2018-12-13 11:20:01.287 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-13 11:20:01.287 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-13 11:20:01.287 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-13 11:20:01.287 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-13 11:20:01.287 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-13 11:20:01.340 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2018-12-13 11:20:02.127 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-13 11:20:02.283 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:20:02.298 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-13 11:20:02.406 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-13 11:20:02.406 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-13 11:20:02.453 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-13 11:20:02.623 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-13 11:20:03.225 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:20:03.645 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:20:03.970 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7aa82b: startup date [Thu Dec 13 11:19:58 CST 2018]; root of context hierarchy
+2018-12-13 11:20:04.005 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-13 11:20:04.052 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/test.htm]}" onto public java.math.BigDecimal com.zyl.controller.AbroadTimeController.abroadPrice(com.zyl.model.UserDomain)
+2018-12-13 11:20:04.052 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tologin/test.htm]}" onto public org.springframework.web.servlet.ModelAndView com.zyl.controller.AbroadTimeController.abroadPriceaa()
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/Registered.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toRegistered()
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/logout.htm]}" onto public void com.zyl.controller.login.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/saveRegistered.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.saveUser(com.zyl.vo.Res.UserVo)
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toLogin()
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/enter.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.zyl.vo.Res.UserVo)
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tst]}" onto public java.lang.String com.zyl.controller.SampleController.test()
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.zyl.controller.UserController.addUser(com.zyl.model.UserDomain)
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/all],methods=[GET]}" onto public java.lang.Object com.zyl.controller.UserController.findAllUser(int,int) throws java.lang.Exception
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/checkObject],methods=[GET]}" onto public void com.zyl.controller.UserController.testchecked(com.zyl.model.UserDomain,org.springframework.validation.BindingResult) throws java.lang.Exception
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/louguser.htm]}" onto public java.lang.Object com.zyl.wxController.AppletUserinfoController.saveAppUserInfo(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay],produces=[text/json;charset=UTF-8]}" onto public java.lang.String com.zyl.wxController.WXPayController.pay(javax.servlet.http.HttpServletRequest,java.lang.String)
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notifi]}" onto public void com.zyl.wxController.WXPayController.notifi(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:20:04.067 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:20:04.098 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:20:04.098 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:20:04.114 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in resultExceptionHandle
+2018-12-13 11:20:04.176 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-12-13 11:20:04.775 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.zyl.webSocket.WebSocket
+2018-12-13 11:20:04.787 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-13 11:20:04.788 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-12-13 11:20:04.789 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-13 11:20:04.796 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-12-13 11:20:04.797 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-12-13 11:20:04.808 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-12-13 11:20:04.832 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-13 11:20:04.849 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-12-13 11:20:04.859 [main] INFO  com.zyl.StringbootApplication - Started StringbootApplication in 7.118 seconds (JVM running for 8.99)
+2018-12-13 11:20:24.484 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-13 11:20:24.485 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-13 11:20:24.507 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-12-13 11:20:26.977 [http-nio-80-exec-7] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 11:20:27.021 [http-nio-80-exec-7] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 11:20:27.074 [http-nio-80-exec-7] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 1
+2018-12-13 11:21:51.608 [Thread-17] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7aa82b: startup date [Thu Dec 13 11:19:58 CST 2018]; root of context hierarchy
+2018-12-13 11:21:51.624 [Thread-17] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-12-13 11:21:51.624 [Thread-17] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-12-13 11:21:51.624 [Thread-17] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:21:51.624 [Thread-17] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-12-13 11:21:56.390 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 13692 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 11:21:56.390 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 11:21:56.468 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42d2b7: startup date [Thu Dec 13 11:21:56 CST 2018]; root of context hierarchy
+2018-12-13 11:21:57.861 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f0f94935] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 11:21:58.339 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-12-13 11:21:58.355 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-12-13 11:21:58.417 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-13 11:21:58.417 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-13 11:21:58.417 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\zookeeper-3.4.11\bin;D:\apache-maven-3.0.4\bin;D:\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\OpenVPN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\z1761\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\z1761\AppData\Local\Programs\Python\Python37\;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\z1761\Desktop\新建文件夹 (2)\Fiddler;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;.]
+2018-12-13 11:21:58.583 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-13 11:21:58.583 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2115 ms
+2018-12-13 11:21:58.708 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-13 11:21:58.708 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2018-12-13 11:21:58.708 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-13 11:21:58.708 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-13 11:21:58.708 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-13 11:21:58.708 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-13 11:21:58.708 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-13 11:21:58.755 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2018-12-13 11:21:59.513 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-13 11:21:59.681 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:21:59.696 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-13 11:21:59.790 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-13 11:21:59.790 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-13 11:21:59.837 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-13 11:22:00.021 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-13 11:22:00.582 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:22:00.990 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:22:01.303 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42d2b7: startup date [Thu Dec 13 11:21:56 CST 2018]; root of context hierarchy
+2018-12-13 11:22:01.350 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-13 11:22:01.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/test.htm]}" onto public java.math.BigDecimal com.zyl.controller.AbroadTimeController.abroadPrice(com.zyl.model.UserDomain)
+2018-12-13 11:22:01.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tologin/test.htm]}" onto public org.springframework.web.servlet.ModelAndView com.zyl.controller.AbroadTimeController.abroadPriceaa()
+2018-12-13 11:22:01.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/logout.htm]}" onto public void com.zyl.controller.login.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:22:01.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/saveRegistered.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.saveUser(com.zyl.vo.Res.UserVo)
+2018-12-13 11:22:01.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toLogin()
+2018-12-13 11:22:01.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/enter.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.zyl.vo.Res.UserVo)
+2018-12-13 11:22:01.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/Registered.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toRegistered()
+2018-12-13 11:22:01.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tst]}" onto public java.lang.String com.zyl.controller.SampleController.test()
+2018-12-13 11:22:01.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.zyl.controller.UserController.addUser(com.zyl.model.UserDomain)
+2018-12-13 11:22:01.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/all],methods=[GET]}" onto public java.lang.Object com.zyl.controller.UserController.findAllUser(int,int) throws java.lang.Exception
+2018-12-13 11:22:01.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/checkObject],methods=[GET]}" onto public void com.zyl.controller.UserController.testchecked(com.zyl.model.UserDomain,org.springframework.validation.BindingResult) throws java.lang.Exception
+2018-12-13 11:22:01.397 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/louguser.htm]}" onto public java.lang.Object com.zyl.wxController.AppletUserinfoController.saveAppUserInfo(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:22:01.397 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay],produces=[text/json;charset=UTF-8]}" onto public java.lang.String com.zyl.wxController.WXPayController.pay(javax.servlet.http.HttpServletRequest,java.lang.String)
+2018-12-13 11:22:01.397 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notifi]}" onto public void com.zyl.wxController.WXPayController.notifi(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:22:01.412 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:22:01.412 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:22:01.428 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:22:01.428 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:22:01.459 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in resultExceptionHandle
+2018-12-13 11:22:01.522 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-12-13 11:22:02.135 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.zyl.webSocket.WebSocket
+2018-12-13 11:22:02.135 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-13 11:22:02.135 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-12-13 11:22:02.135 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-13 11:22:02.151 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-12-13 11:22:02.151 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-12-13 11:22:02.170 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-12-13 11:22:02.190 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-13 11:22:02.206 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-12-13 11:22:02.206 [main] INFO  com.zyl.StringbootApplication - Started StringbootApplication in 6.39 seconds (JVM running for 7.861)
+2018-12-13 11:22:16.200 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-13 11:22:16.200 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-13 11:22:16.225 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-12-13 11:22:19.563 [http-nio-80-exec-5] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 11:22:19.586 [http-nio-80-exec-5] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 11:22:19.637 [http-nio-80-exec-5] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 1
+2018-12-13 11:24:03.044 [Thread-16] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42d2b7: startup date [Thu Dec 13 11:21:56 CST 2018]; root of context hierarchy
+2018-12-13 11:24:03.052 [Thread-16] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-12-13 11:24:03.056 [Thread-16] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-12-13 11:24:03.056 [Thread-16] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:24:03.056 [Thread-16] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-12-13 11:24:08.459 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 9912 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 11:24:08.459 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 11:24:08.569 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d1dc90: startup date [Thu Dec 13 11:24:08 CST 2018]; root of context hierarchy
+2018-12-13 11:24:10.053 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$539a63c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 11:24:10.927 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-12-13 11:24:10.942 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-12-13 11:24:10.968 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-13 11:24:10.968 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-13 11:24:10.973 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\zookeeper-3.4.11\bin;D:\apache-maven-3.0.4\bin;D:\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\OpenVPN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\z1761\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\z1761\AppData\Local\Programs\Python\Python37\;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\z1761\Desktop\新建文件夹 (2)\Fiddler;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;.]
+2018-12-13 11:24:11.118 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-13 11:24:11.118 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2549 ms
+2018-12-13 11:24:11.303 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-13 11:24:11.303 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2018-12-13 11:24:11.303 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-13 11:24:11.303 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-13 11:24:11.303 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-13 11:24:11.303 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-13 11:24:11.303 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-13 11:24:11.334 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2018-12-13 11:24:12.150 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-13 11:24:12.308 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:24:12.324 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-13 11:24:12.416 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-13 11:24:12.416 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-13 11:24:12.463 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-13 11:24:12.679 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-13 11:24:13.256 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 11:24:13.698 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:24:14.008 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d1dc90: startup date [Thu Dec 13 11:24:08 CST 2018]; root of context hierarchy
+2018-12-13 11:24:14.055 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-13 11:24:14.109 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tologin/test.htm]}" onto public org.springframework.web.servlet.ModelAndView com.zyl.controller.AbroadTimeController.abroadPriceaa()
+2018-12-13 11:24:14.111 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/test.htm]}" onto public java.math.BigDecimal com.zyl.controller.AbroadTimeController.abroadPrice(com.zyl.model.UserDomain)
+2018-12-13 11:24:14.112 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/Registered.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toRegistered()
+2018-12-13 11:24:14.112 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/saveRegistered.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.saveUser(com.zyl.vo.Res.UserVo)
+2018-12-13 11:24:14.113 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/logout.htm]}" onto public void com.zyl.controller.login.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:24:14.113 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toLogin()
+2018-12-13 11:24:14.113 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/enter.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.zyl.vo.Res.UserVo)
+2018-12-13 11:24:14.113 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tst]}" onto public java.lang.String com.zyl.controller.SampleController.test()
+2018-12-13 11:24:14.117 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/all],methods=[GET]}" onto public java.lang.Object com.zyl.controller.UserController.findAllUser(int,int) throws java.lang.Exception
+2018-12-13 11:24:14.117 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/checkObject],methods=[GET]}" onto public void com.zyl.controller.UserController.testchecked(com.zyl.model.UserDomain,org.springframework.validation.BindingResult) throws java.lang.Exception
+2018-12-13 11:24:14.117 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.zyl.controller.UserController.addUser(com.zyl.model.UserDomain)
+2018-12-13 11:24:14.120 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/louguser.htm]}" onto public java.lang.Object com.zyl.wxController.AppletUserinfoController.saveAppUserInfo(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:24:14.121 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay],produces=[text/json;charset=UTF-8]}" onto public java.lang.String com.zyl.wxController.WXPayController.pay(javax.servlet.http.HttpServletRequest,java.lang.String)
+2018-12-13 11:24:14.121 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notifi]}" onto public void com.zyl.wxController.WXPayController.notifi(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:24:14.123 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-13 11:24:14.123 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 11:24:14.153 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:24:14.153 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 11:24:14.184 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in resultExceptionHandle
+2018-12-13 11:24:14.231 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-12-13 11:24:14.765 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.zyl.webSocket.WebSocket
+2018-12-13 11:24:14.781 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-13 11:24:14.781 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-12-13 11:24:14.781 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-13 11:24:14.781 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-12-13 11:24:14.781 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-12-13 11:24:14.796 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-12-13 11:24:14.812 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-13 11:24:14.828 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-12-13 11:24:14.828 [main] INFO  com.zyl.StringbootApplication - Started StringbootApplication in 7.039 seconds (JVM running for 8.743)
+2018-12-13 11:24:18.977 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-13 11:24:18.977 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-13 11:24:18.998 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-12-13 11:24:21.765 [http-nio-80-exec-7] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 11:24:21.789 [http-nio-80-exec-7] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 11:24:21.841 [http-nio-80-exec-7] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 1
+2018-12-13 14:06:33.170 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.insert - ==>  Preparing: INSERT INTO t_user ( userName,password, phone ) VALUES( ?,?, ? ) 
+2018-12-13 14:06:33.173 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.insert - ==> Parameters: 123(String), 123(String), 123(String)
+2018-12-13 14:06:33.268 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.insert - <==    Updates: 1
+2018-12-13 14:06:36.459 [http-nio-80-exec-3] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 14:06:36.459 [http-nio-80-exec-3] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 14:06:36.496 [http-nio-80-exec-3] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 2
+2018-12-13 14:06:36.508 [http-nio-80-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2]
+2018-12-13 14:06:53.058 [http-nio-80-exec-8] DEBUG com.zyl.dao.UserDao.insert - ==>  Preparing: INSERT INTO t_user ( userName,password, phone ) VALUES( ?,?, ? ) 
+2018-12-13 14:06:53.058 [http-nio-80-exec-8] DEBUG com.zyl.dao.UserDao.insert - ==> Parameters: 123(String), 123(String), 123(String)
+2018-12-13 14:06:53.130 [http-nio-80-exec-8] DEBUG com.zyl.dao.UserDao.insert - <==    Updates: 1
+2018-12-13 14:06:56.795 [http-nio-80-exec-7] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 14:06:56.795 [http-nio-80-exec-7] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 14:06:56.832 [http-nio-80-exec-7] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 3
+2018-12-13 14:06:56.833 [http-nio-80-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 3]
+2018-12-13 14:07:04.587 [http-nio-80-exec-10] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 14:07:04.587 [http-nio-80-exec-10] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 14:07:04.621 [http-nio-80-exec-10] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 3
+2018-12-13 14:07:04.624 [http-nio-80-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 3]
+2018-12-13 14:07:15.999 [http-nio-80-exec-1] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 14:07:15.999 [http-nio-80-exec-1] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 14:07:16.054 [http-nio-80-exec-1] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 3
+2018-12-13 14:07:16.056 [http-nio-80-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 3]
+2018-12-13 14:07:31.757 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 14:07:31.757 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 14:07:31.794 [http-nio-80-exec-6] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 3
+2018-12-13 14:07:31.795 [http-nio-80-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 3]
+2018-12-13 14:08:34.587 [http-nio-80-exec-1] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 14:08:34.587 [http-nio-80-exec-1] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 14:08:34.623 [http-nio-80-exec-1] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 1
+2018-12-13 14:24:31.271 [Thread-17] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d1dc90: startup date [Thu Dec 13 11:24:08 CST 2018]; root of context hierarchy
+2018-12-13 14:24:31.315 [Thread-17] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-12-13 14:24:31.316 [Thread-17] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-12-13 14:24:31.320 [Thread-17] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 14:24:31.371 [Thread-17] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-12-13 14:45:25.330 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 12524 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 14:45:25.336 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 14:45:25.445 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1bd0be: startup date [Thu Dec 13 14:45:25 CST 2018]; root of context hierarchy
+2018-12-13 14:45:25.822 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.zyl.StringbootApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userController' for bean class [com.zyl.swggerController.UserController] conflicts with existing, non-compatible bean definition of same name and class [com.zyl.controller.UserController]
+2018-12-13 14:45:26.106 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.zyl.StringbootApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userController' for bean class [com.zyl.swggerController.UserController] conflicts with existing, non-compatible bean definition of same name and class [com.zyl.controller.UserController]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:184)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:233)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:271)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:91)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.zyl.StringbootApplication.main(StringbootApplication.java:27)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userController' for bean class [com.zyl.swggerController.UserController] conflicts with existing, non-compatible bean definition of same name and class [com.zyl.controller.UserController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:288)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170)
+	... 13 common frames omitted
+2018-12-13 14:46:17.292 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 13684 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 14:46:17.296 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 14:46:17.395 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@cca26f: startup date [Thu Dec 13 14:46:17 CST 2018]; root of context hierarchy
+2018-12-13 14:46:17.695 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.zyl.StringbootApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userController' for bean class [com.zyl.swggerController.UserController] conflicts with existing, non-compatible bean definition of same name and class [com.zyl.controller.UserController]
+2018-12-13 14:46:17.835 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.zyl.StringbootApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userController' for bean class [com.zyl.swggerController.UserController] conflicts with existing, non-compatible bean definition of same name and class [com.zyl.controller.UserController]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:184)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:233)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:271)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:91)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.zyl.StringbootApplication.main(StringbootApplication.java:27)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userController' for bean class [com.zyl.swggerController.UserController] conflicts with existing, non-compatible bean definition of same name and class [com.zyl.controller.UserController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:288)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170)
+	... 13 common frames omitted
+2018-12-13 14:47:46.268 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 13176 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 14:47:46.275 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 14:47:46.347 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15b9425: startup date [Thu Dec 13 14:47:46 CST 2018]; root of context hierarchy
+2018-12-13 14:47:46.589 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.zyl.StringbootApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userController' for bean class [com.zyl.swggerController.UserController] conflicts with existing, non-compatible bean definition of same name and class [com.zyl.controller.UserController]
+2018-12-13 14:47:46.697 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.zyl.StringbootApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userController' for bean class [com.zyl.swggerController.UserController] conflicts with existing, non-compatible bean definition of same name and class [com.zyl.controller.UserController]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:184)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:233)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:271)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:91)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.zyl.StringbootApplication.main(StringbootApplication.java:27)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userController' for bean class [com.zyl.swggerController.UserController] conflicts with existing, non-compatible bean definition of same name and class [com.zyl.controller.UserController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:288)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170)
+	... 13 common frames omitted
+2018-12-13 14:50:02.569 [main] INFO  com.zyl.StringbootApplication - Starting StringbootApplication on DESKTOP-8AD8R9C with PID 15672 (D:\demo\stringboot\target\classes started by z1761 in D:\demo\stringboot)
+2018-12-13 14:50:02.575 [main] INFO  com.zyl.StringbootApplication - No active profile set, falling back to default profiles: default
+2018-12-13 14:50:02.731 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12c0e88: startup date [Thu Dec 13 14:50:02 CST 2018]; root of context hierarchy
+2018-12-13 14:50:05.759 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$43fd1ec2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-13 14:50:06.698 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-12-13 14:50:06.717 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2018-12-13 14:50:06.731 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-13 14:50:06.731 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-13 14:50:06.738 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\zookeeper-3.4.11\bin;D:\apache-maven-3.0.4\bin;D:\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\OpenVPN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\z1761\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\z1761\AppData\Local\Programs\Python\Python37\;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\z1761\Desktop\新建文件夹 (2)\Fiddler;C:\Users\z1761\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;.]
+2018-12-13 14:50:07.050 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-13 14:50:07.050 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4319 ms
+2018-12-13 14:50:07.308 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-13 14:50:07.315 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+2018-12-13 14:50:07.327 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-13 14:50:07.328 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-13 14:50:07.331 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-13 14:50:07.332 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-13 14:50:07.332 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-13 14:50:07.419 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2018-12-13 14:50:08.788 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-12-13 14:50:09.020 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-13 14:50:09.044 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-13 14:50:09.169 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-12-13 14:50:09.173 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-13 14:50:09.262 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-13 14:50:09.543 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-13 14:50:10.414 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 14:50:11.975 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-13 14:50:12.103 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tologin/test.htm]}" onto public org.springframework.web.servlet.ModelAndView com.zyl.controller.AbroadTimeController.abroadPriceaa()
+2018-12-13 14:50:12.106 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/test.htm]}" onto public java.math.BigDecimal com.zyl.controller.AbroadTimeController.abroadPrice(com.zyl.model.UserDomain)
+2018-12-13 14:50:12.108 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/Registered.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toRegistered()
+2018-12-13 14:50:12.108 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login.htm]}" onto public java.lang.String com.zyl.controller.login.LoginController.toLogin()
+2018-12-13 14:50:12.109 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/logout.htm]}" onto public void com.zyl.controller.login.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 14:50:12.110 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/enter.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.zyl.vo.Res.UserVo)
+2018-12-13 14:50:12.110 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/saveRegistered.htm]}" onto public com.zyl.common.CustomResult com.zyl.controller.login.LoginController.saveUser(com.zyl.vo.Res.UserVo)
+2018-12-13 14:50:12.111 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tst]}" onto public java.lang.String com.zyl.controller.SampleController.test()
+2018-12-13 14:50:12.118 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add],methods=[POST]}" onto public int com.zyl.controller.UserController.addUser(com.zyl.model.UserDomain)
+2018-12-13 14:50:12.119 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/checkObject],methods=[GET]}" onto public void com.zyl.controller.UserController.testchecked(com.zyl.model.UserDomain,org.springframework.validation.BindingResult) throws java.lang.Exception
+2018-12-13 14:50:12.119 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/all],methods=[GET]}" onto public java.lang.Object com.zyl.controller.UserController.findAllUser(int,int) throws java.lang.Exception
+2018-12-13 14:50:12.121 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.zyl.swggerController.result.JsonResult> com.zyl.swggerController.UsersController.add(com.zyl.swggerController.pojo.User)
+2018-12-13 14:50:12.121 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.zyl.swggerController.result.JsonResult> com.zyl.swggerController.UsersController.update(java.lang.Integer,com.zyl.swggerController.pojo.User)
+2018-12-13 14:50:12.122 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.zyl.swggerController.result.JsonResult> com.zyl.swggerController.UsersController.delete(java.lang.Integer)
+2018-12-13 14:50:12.123 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.zyl.swggerController.result.JsonResult> com.zyl.swggerController.UsersController.getUserList()
+2018-12-13 14:50:12.123 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.zyl.swggerController.result.JsonResult> com.zyl.swggerController.UsersController.getUserById(java.lang.Integer)
+2018-12-13 14:50:12.124 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hi],methods=[GET]}" onto public java.lang.String com.zyl.swggerController.UsersController.jsonTest()
+2018-12-13 14:50:12.125 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/louguser.htm]}" onto public java.lang.Object com.zyl.wxController.AppletUserinfoController.saveAppUserInfo(javax.servlet.http.HttpServletRequest)
+2018-12-13 14:50:12.132 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/pay],produces=[text/json;charset=UTF-8]}" onto public java.lang.String com.zyl.wxController.WXPayController.pay(javax.servlet.http.HttpServletRequest,java.lang.String)
+2018-12-13 14:50:12.133 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/notifi]}" onto public void com.zyl.wxController.WXPayController.notifi(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 14:50:12.136 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-13 14:50:12.147 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-12-13 14:50:12.149 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-12-13 14:50:12.152 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-12-13 14:50:12.157 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-13 14:50:12.158 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-13 14:50:12.603 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 14:50:13.076 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12c0e88: startup date [Thu Dec 13 14:50:02 CST 2018]; root of context hierarchy
+2018-12-13 14:50:13.198 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 14:50:13.198 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-13 14:50:13.224 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in resultExceptionHandle
+2018-12-13 14:50:13.327 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-12-13 14:50:13.988 [main] INFO  o.s.w.s.server.standard.ServerEndpointExporter - Registering @ServerEndpoint class: class com.zyl.webSocket.WebSocket
+2018-12-13 14:50:14.012 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-13 14:50:14.022 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-12-13 14:50:14.023 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-13 14:50:14.046 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-12-13 14:50:14.048 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-12-13 14:50:14.056 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-12-13 14:50:14.056 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-12-13 14:50:14.091 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-12-13 14:50:14.121 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-12-13 14:50:14.159 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2018-12-13 14:50:14.194 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-13 14:50:14.387 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-12-13 14:50:14.406 [main] INFO  com.zyl.StringbootApplication - Started StringbootApplication in 12.833 seconds (JVM running for 15.793)
+2018-12-13 14:50:25.698 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-13 14:50:25.698 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-13 14:50:25.728 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-12-13 14:50:29.284 [http-nio-80-exec-5] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 14:50:29.313 [http-nio-80-exec-5] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123(String)
+2018-12-13 14:50:29.369 [http-nio-80-exec-5] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 1
+2018-12-13 14:50:48.521 [http-nio-80-exec-2] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 14:50:48.522 [http-nio-80-exec-2] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: enterprise02(String)
+2018-12-13 14:50:48.560 [http-nio-80-exec-2] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 0
+2018-12-13 14:51:23.007 [http-nio-80-exec-9] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 14:51:23.009 [http-nio-80-exec-9] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: enterprise02(String)
+2018-12-13 14:51:23.049 [http-nio-80-exec-9] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 0
+2018-12-13 14:52:23.782 [http-nio-80-exec-1] DEBUG com.zyl.dao.UserDao.findByUserObject - ==>  Preparing: SELECT userId,userName,password,phone FROM t_user WHERE phone=? 
+2018-12-13 14:52:23.782 [http-nio-80-exec-1] DEBUG com.zyl.dao.UserDao.findByUserObject - ==> Parameters: 123123123(String)
+2018-12-13 14:52:23.817 [http-nio-80-exec-1] DEBUG com.zyl.dao.UserDao.findByUserObject - <==      Total: 1
+2018-12-13 14:52:49.992 [Thread-29] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12c0e88: startup date [Thu Dec 13 14:50:02 CST 2018]; root of context hierarchy
+2018-12-13 14:52:50.006 [Thread-29] INFO  o.s.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-12-13 14:52:50.008 [Thread-29] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-12-13 14:52:50.009 [Thread-29] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-12-13 14:52:50.021 [Thread-29] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-13 14:52:50.042 [Thread-29] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

@@ -16,7 +16,9 @@ import javax.websocket.*;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArraySet;
 
@@ -35,7 +37,7 @@ public class WebSocket {
     private static int count =0;
 
     @OnOpen
-    public void onOpen(Session session, EndpointConfig config){
+    public Object onOpen(Session session, EndpointConfig config){
          HttpSession sess= (HttpSession)config.getUserProperties().get("org.apache.catalina.session.StandardSessionFacade");
         UserDomain attribute = (UserDomain) sess.getAttribute("_user");
         if (null != attribute) {
@@ -50,14 +52,13 @@ public class WebSocket {
                 e.printStackTrace();
             }
         }
-
        /* count++;
         socket.put(count+"",this);*/
-
-
         addOnlineCount();
         System.out.println("已连接");
         System.out.println("有新连接加入！当前在线人数为" + getOnlineCount());
+        Set<String> strings = socket.keySet();
+        return strings;
     }
 
     @OnClose

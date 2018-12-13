@@ -7,6 +7,7 @@ import com.zyl.design.service.AbroadTimeService;
 import com.zyl.design.service.TaxiPriceService;
 import com.zyl.model.UserDomain;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,6 +33,8 @@ public class AbroadTimeController {
         return 0;
     }*/
 
+    @Value("${SMB.domain}")
+    private String domain;
     @Autowired
     private ApplicationContext applicationContext;
 
@@ -102,7 +105,7 @@ public class AbroadTimeController {
     }
 
     @RequestMapping("/tologin/test.htm")
-    public String abroadPriceaa(){
+    public ModelAndView abroadPriceaa(){
         System.out.println("进入方法");
       /*  SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         long l = System.currentTimeMillis();
@@ -117,9 +120,9 @@ public class AbroadTimeController {
         System.out.println(bigDecimal1);
 
         return bigDecinullmal1;*/
-        ModelAndView modelAndView = new ModelAndView("index");
-
-        return "hello";
+        ModelAndView modelAndView = new ModelAndView("hello");
+        modelAndView.addObject("domain",domain);
+        return modelAndView;
     }
 
 
