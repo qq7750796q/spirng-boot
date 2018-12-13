@@ -72,7 +72,7 @@ applet:
   grenType: authorization_code
 
 SMB:
-  domain: 39.96.49.212
-  #domain: 127.0.0.1
+  #domain: 39.96.49.212
+  domain: 127.0.0.1
   path: /
   cookies: userCookie
