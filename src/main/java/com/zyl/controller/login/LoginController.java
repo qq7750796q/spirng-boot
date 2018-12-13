@@ -8,6 +8,7 @@ import com.zyl.service.UserService;
 import com.zyl.vo.Res.UserVo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -29,6 +30,12 @@ public class LoginController {
     @Autowired
     private UserService userService;
 
+    @Value("${SMB.domain}")
+    private String domain;
+    @Value("${SMB.path}")
+    private String path;
+    @Value("${SMB.cookies}")
+    private String smbCookies;
     /**
      * 跳转到登陆界面
      */
@@ -76,22 +83,22 @@ public class LoginController {
                 boolean userCookie = false;
                 if (null != cookies) {
                     List<Cookie> cookies1 = Arrays.asList(cookies);
-                    userCookie = cookies1.contains("userCookie");
+                    userCookie = cookies1.contains(smbCookies);
                 }
                 if (userCookie) {
                     for (int i = 0; i <cookies.length ; i++) {
                         Cookie cookie = cookies[i];
-                        if ("userCookie".equals(cookie.getName())) {
-                            cookie.setDomain("springboot.zyl.com");
+                        if (smbCookies.equals(cookie.getName())) {
+                            cookie.setDomain(domain);
                             cookie.setPath("/");
                             cookie.setValue(id);
                             response.addCookie(cookie);
                         }
                     }
                 } else {
-                    Cookie cookie = new Cookie("userCookie",id);
-                    cookie.setDomain("springboot.zyl.com");
-                    cookie.setPath("/");
+                    Cookie cookie = new Cookie(smbCookies,id);
+                    cookie.setDomain(domain);
+                    cookie.setPath(path);
                     response.addCookie(cookie);
                 }
                 session.setAttribute("_user",user);
@@ -134,7 +141,7 @@ public class LoginController {
         Cookie[] cookies = request.getCookies();
         for (int i = 0; i < cookies.length; i++) {
             Cookie cookie = cookies[i];
-            if (cookie.getName().equals("userCookie")) {
+            if (cookie.getName().equals(smbCookies)) {
                 cookie.setMaxAge(0);
                 response.addCookie(cookie);
             }

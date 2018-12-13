@@ -23,9 +23,9 @@ public class RegulationInterceptor implements WebMvcConfigurer {
         List<String> objects = new ArrayList<>();
         //objects.add();
         registry.addInterceptor(webInterceptor).addPathPatterns("/**/**")
-                .excludePathPatterns("/images/**","/js/**","/script/**","/templates/**","/test/**","/css/**","/login/**");
+               .excludePathPatterns("/images/**","/js/**","/script/**","/templates/**","/test/**","/css/**","/login/**");
 
-      //  super.addInterceptors(registry);
+        //  super.addInterceptors(registry);
     }
 
 

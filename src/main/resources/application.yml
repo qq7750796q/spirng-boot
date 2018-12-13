@@ -1,5 +1,5 @@
 server:
-  port: 8180
+  port: 80
   servlet:
     context-path: /
 
@@ -32,9 +32,9 @@ spring:
           filters: stat
           driver-class-name: com.mysql.jdbc.Driver
           #基本属性
-          url: jdbc:mysql://127.0.0.1:3306/mytest?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
-          username: root
-          password: root
+          url: jdbc:mysql://rm-bp1112junt8qg60939o.mysql.rds.aliyuncs.com:3306/mytest?useUnicode=true&characterEncoding=UTF-8
+          username: qq7248
+          password: Qq123!456
           #配置初始化大小/最小/最大
           initial-size: 1
           min-idle: 1
@@ -65,4 +65,13 @@ pagehelper:
     params: count=countSql
     returnPageInfo: check
 
+applet:
+  url: https://api.weixin.qq.com/sns/jscode2session
+  appid: wx803aa66d1bb25581
+  appSecret: cb4deae5c7325b04548a2bd3a3414702
+  grenType: authorization_code
 
+SMB:
+  domain: 39.96.49.212
+  path: /
+  cookies: userCookie

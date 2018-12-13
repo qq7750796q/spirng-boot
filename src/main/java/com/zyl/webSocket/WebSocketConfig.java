@@ -9,12 +9,13 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.socket.server.standard.ServerEndpointExporter;
 
 import java.util.EventListener;
+import java.util.Scanner;
 
 /** 这个bean 告诉springboot 要支持websocket
  *
  * Created by z1761 on 2018/11/5.
  */
-@Component
+@Configuration
 public class WebSocketConfig {
     @Autowired
     private RequestListening requestListening;
@@ -24,10 +25,15 @@ public class WebSocketConfig {
         return new ServerEndpointExporter();
     }
 
+    /**
+     * 配置session监听器
+     * @return
+     */
     @Bean
     public ServletListenerRegistrationBean servletListningRequestBean(){
         ServletListenerRegistrationBean<EventListener> bean = new ServletListenerRegistrationBean<>();
         bean.setListener(requestListening);
         return bean;
     }
+
 }
