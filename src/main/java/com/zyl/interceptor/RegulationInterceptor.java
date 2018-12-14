@@ -3,6 +3,7 @@ package com.zyl.interceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -22,12 +23,16 @@ public class RegulationInterceptor implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         List<String> objects = new ArrayList<>();
         //objects.add();
-        registry.addInterceptor(webInterceptor).addPathPatterns("/**/**")
-               .excludePathPatterns("/images/**","/js/**","/script/**","/templates/**","/test/**","/css/**","/login/**","/META-INF/*");
-
+        registry.addInterceptor(webInterceptor).addPathPatterns("/**")
+               .excludePathPatterns("/images/**","/js/**","/script/**","/templates/**","/test/**","/css/**","/login/**","/META-INF/*")
+                .excludePathPatterns("/swagger-resources/**", "/webjars/**", "/v2/**", "/swagger-ui.html/**");
         //  super.addInterceptors(registry);
     }
 
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+
+    }
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
