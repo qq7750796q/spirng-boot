@@ -1,4 +1,4 @@
-package com.zyl.swggerController;
+package com.zyl.swggerController.controller;
 
 import com.zyl.swggerController.pojo.User;
 import com.zyl.swggerController.result.JsonResult;
