@@ -2,6 +2,7 @@ package com.zyl.swggerController;
 
 import com.zyl.swggerController.pojo.User;
 import com.zyl.swggerController.result.JsonResult;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
@@ -15,6 +16,7 @@ import java.util.*;
 /**asdasdasdasdasdasd
  *232323232323
  */
+@Api(description = "用户管理")
 @RestController
 public class UsersController {
     // 创建线程安全的Map

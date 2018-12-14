@@ -10,10 +10,6 @@ logging:
       zyl:
         dao: debug
 
- #  mvc:
-  #     view:
-  #      perfix: /WEB-INF/jsp/
-   #     suffix: .jsp
 spring:
     thymeleaf:
           prefix: classpath:/templates/
@@ -76,3 +72,7 @@ SMB:
   domain: 127.0.0.1
   path: /
   cookies: userCookie
+
+swagger:
+  devurl: http://127.0.0.1/swagger-ui.html
+  testurl: http://39.96.49.212/swagger-ui.html

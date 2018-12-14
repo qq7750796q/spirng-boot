@@ -6,6 +6,7 @@ import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
@@ -15,11 +16,17 @@ public class Swagger {
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo())
+                .apiInfo(new ApiInfoBuilder()
+                        .title("标题：某公司_用户信息管理系统_接口文档")
+                        .description("描述：用于管理集团旗下公司的人员信息,具体包括XXX,XXX模块...")
+                        .contact(new Contact("一只袜子", null, null))
+                        .version("版本号:1.0")
+                        .build())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("cn.saytime.web"))
+                .apis(RequestHandlerSelectors.basePackage("com.zyl.swggerController"))
                 .paths(PathSelectors.any())
                 .build();
+
     }
 
     private ApiInfo apiInfo() {
